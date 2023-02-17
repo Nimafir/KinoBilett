@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kinobiletter</title>
+</head>
+<script type="text/javascript" src="KinoBilletJava.js"></script>
+<style>
+
+    label{
+            display: inline-block;
+            width: 75px;
+            text-align: left;
+        }
+        
+        body{
+            padding: 2px;
+            padding-bottom: 50px;
+            border: 2px solid rgb(red);
+            width: 700px;
+        }
+
+</style>
+<body>
+    <h1> Bestilling av kinobiletter </h1>
+
+    <p>
+        Velg film
+          <select id="select1">
+              <option value="Velgfilmher">Velg film her </option>
+              <option value="Lucy">Lucy</option>
+              <option value="Fast and furious">Fast and furious</option>
+              <option value="Spiderman">Spiderman</option>
+              <option value="Mr.Bean">Mr.Bean</option>
+              <option value="Wolf of wall street">Wolf of wall street
+              </option>
+          </select>
+      </p>
+      <p>
+            Antall
+        <input type="text" id="input5" style="width: 18px;"/>
+        <span id="input5_error" style="color: red;"></span><br>
+            </p>
+    <!-- HTML form -->
+    <form>
+        <p>
+           <label>Fornavn</label> 
+            <input type="text" id="input1" />
+            <span id="input1_error" style="color: red;"></span><br>
+
+        </p>
+        <p>
+            <label>Etternavn</label> 
+        <input type="text" id="input2" />
+        <span id="input2_error" style="color: red;"></span><br>
+
+        </p>
+        <p>
+            <label>Telefonnr</label>
+        <input type="text" id="input3" />
+        <span id="input3_error" style="color: red;"></span><br>
+
+        </p>
+        <p>
+            <label>Epost</label>
+        <input type="text" id="input4" />
+        <span id="input4_error" style="color: red;"></span><br>
+
+        </p>
+        <input type="button" value="Kjøp Billett" onclick="submit_click()" />
+        <p></p>
+        <h2>Alle Billetter</h2>
+        <button type="button" onclick="clearInputs()">Slett alle billettene</button>
+    </form>
+</body>
+</html>
